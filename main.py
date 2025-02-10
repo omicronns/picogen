@@ -2,11 +2,11 @@ from machine import Pin, mem32, freq as cpu_freq
 from rp2 import PIO, StateMachine, asm_pio, DMA
 from uctypes import addressof
 from array import array
-from math import sin, pi, log2
+from math import sin, pi
 import time
 
-DMA_BASE = 0x50000000
-CH0_READ_ADDR = DMA_BASE+0x000
+DMA_BASE            = 0x50000000
+CH0_READ_ADDR       = DMA_BASE+0x000
 
 samp_per_word = 4
 
